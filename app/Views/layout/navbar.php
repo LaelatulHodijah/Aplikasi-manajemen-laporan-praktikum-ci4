@@ -29,6 +29,7 @@ Mata Kuliah</a>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-light text-light" type="submit">Search</button>
+        <a class="btn btn-primary btn-lg" href="<?= base_url('login/logout'); ?>" role="button">Logout</a>
       </form>
     </div>
   </div>

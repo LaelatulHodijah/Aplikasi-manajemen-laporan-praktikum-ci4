@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 class Prak extends BaseController
 {
+
     public function dash()
     {
         return view('web/Home');

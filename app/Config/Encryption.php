@@ -44,7 +44,7 @@ class Encryption extends BaseConfig
      * This is the number of bytes that will be padded to the plaintext message
      * before it is encrypted. This value should be greater than zero.
      *
-     * See the user guide for more information on padding.
+     * See the  guide for more information on padding.
      */
     public int $blockSize = 16;
 
