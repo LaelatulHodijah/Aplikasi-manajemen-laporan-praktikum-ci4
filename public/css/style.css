@@ -19,3 +19,9 @@ body {
 .history {
   padding: 1rem;
 }
+.viewFile {
+  padding-left: 1rem;
+}
+.buttonModal {
+  padding-left: 3rem;
+}

@@ -26,8 +26,10 @@
         <hr>
        </thead>
        <tbody>
-        <h3>Pengumpulan</h3>
+        <h3 class="buttonModal">Pengumpulan</h3>
+        <br>
         <!-- Button trigger modal -->
+        <div class="buttonModal">
         <div class="action">
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
             Kumpul
@@ -35,6 +37,7 @@
             <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
             Detail
             </button>
+        </div>
         </div>
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
