@@ -9,7 +9,7 @@ class Prak extends BaseController
     {
         return view('web/Home');
     }
-    public function absensi()
+    public function absen()
     {
         return view('web/absen');
     }

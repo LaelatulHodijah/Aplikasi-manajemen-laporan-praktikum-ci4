@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-  	<title>Login 01</title>
+  	<title>Aplikasi Manajemen Laporan Praktikum</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -16,8 +16,8 @@
 	<section class="ftco-section">
 		<div class="container">
 			<div class="row justify-content-center">
-				<div class="col-md-6 text-center mb-5">
-					<h2 class="heading-section">Login #01</h2>
+				<div class="col-md-12 text-center mb-5">
+					<h2 class="heading-section">Aplikasi Manajemen Laporan Praktikum</h2>
 				</div>
 			</div>
 			<div class="row justify-content-center">
@@ -27,15 +27,14 @@
 		      		<span class="fa fa-user-o"></span>
 		      	</div>
 		      	<h3 class="text-center mb-4">Sign In</h3>
-					<form action="<?= base_url(
-         'login/login_action'
-     ) ?>" method="POST" class="login-form">
-		      		<div class="form-group">
-		      			<input type="text" class="form-control rounded-left" placeholder="Username" required>
-		      		</div>
+				  <form method="POST" action="<?= base_url('login/login_action') ?>">
+               <div class="form-group">
+			   <input type="text" name="username" class="form-control" id="username" placeholder="Username">
+                  <small id="usernameHelp" class="form-text text-muted"></small>
+					</div>
 	            <div class="form-group d-flex">
-	              <input type="password" class="form-control rounded-left" placeholder="Password" required>
-	            </div>
+				<input type="password" name="password" class="form-control" id="password" placeholder="Password">
+               </div>
 	            <div class="form-group">
 	            	<button type="submit" class="form-control btn btn-primary rounded submit px-3">Login</button>
 	            </div>
