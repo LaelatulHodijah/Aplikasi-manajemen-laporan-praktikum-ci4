@@ -9,27 +9,31 @@
     <div class="col-md-12">
         <div class="card shadow">
             <div class="card-body">
-                <form action="">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <label for="nama_film" class="form-label mt-3">Nama</label>
-                            <input type="text" class="form-control" id="nama_film" name="nama_film">
+                    <form>
+                        <label class="mb-1" for="">Mata Kuliah</label>
+                        <select class="form-select mb-3" aria-label="Default select example">
+                        <option selected>Pilih mata kuliah</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                        </select>       
+                        <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Alfa
+                        </label>
                         </div>
-                        <div class="col-md-6">
-                            <label for="genre" class="form-label mt-3">Mata Kuliah</label>
-                            <select name="id_genre" id="genre" class="form-control" name="id_genre">
-                                <option value=""></option>
-                            </select>
+                        <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Sakit
+                        </label>
                         </div>
-                        <div class="col-md-6">
-                            <label for="duration" class="form-label mt-3">NPM</label>
-                            <input type="text" class="form-control" id="duration" name="duration">
-                        </div>
-                        <div class="col-md-6">
-                            <label for="genre"class="form-label mt-3">Kelas</label>
-                            <select  name="id_genre" id="genre"  class="form-control" name="id_genre">
-                                <option value=""></option>
-                            </select>
+                        <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Hadir
+                        </label>
                         </div>
                         <div class="col-md-6">
                             <button type="submit" class="btn btn-primary mt-5">Simpan</button>
