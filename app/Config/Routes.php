@@ -30,6 +30,14 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Login::');
+$routes->get('dash', 'Prak::dash');
+$routes->get('tugas1', 'Prak::tugas1');
+$routes->get('absen', 'Prak::absen');
+$routes->get('profile', 'Prak::profile');
+$routes->get('matWeb', 'Prak::matWeb');
+$routes->get('matSql', 'Prak::matSql');
+$routes->get('tugas1', 'Prak::tugas1');
+$routes->get('upload', 'Prak::upload');
 
 /*
  * --------------------------------------------------------------------

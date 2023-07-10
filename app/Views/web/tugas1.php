@@ -48,18 +48,18 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-            <form action="store" method="POST" enctype="multipart/form-data">
+            <form action="upload" method="POST" enctype="multipart/form-data">
                     <div class="mb-3">
                         <label for="exampleInputJudul1" class="form-label">Judul</label>
-                        <input type="Judul" class="form-control" id="exampleInputJudul1" >
+                        <input type="text" name="nama_matkul" class="form-control" id="exampleInputJudul1" >
                         <div id="judullHelp" class="form-text">Masukan judul / nama file praktikum anda.</div>
                     </div>
                     <div class="input-group mb-3">
-                    <input placeholder="Pilih File" type="file" class="form-control" id="inputGroupFile01">
+                    <input placeholder="Pilih File" type="file" name="file" class="form-control" id="inputGroupFile01">
                     </div>
                     <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-primary">Save changes</button>
+                <button type="submit" value="upload" class="btn btn-primary">Save changes</button>
             </div>
                 </form>
             </div>

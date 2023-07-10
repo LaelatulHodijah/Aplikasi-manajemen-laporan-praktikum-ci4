@@ -2,13 +2,13 @@
 namespace App\Models;
 use CodeIgniter\Model;
 
-class matkulModel extends Model
+class fileModel extends Model
 {
-    protected $table = 'matkul';
-    protected $primaryKey = 'id_matkul';
+    protected $table = 'file';
+    protected $primaryKey = 'id';
     protected $useAutoIncrement = 'true';
     protected $protectFields = false;
-    protected $allowedFields = ['nama_matkul', 'file_matkul'];
+    protected $allowedFields = ['nama_matkul', 'file'];
 
     public function getAllData()
     {

@@ -9,41 +9,50 @@
     <div class="col-md-12">
         <div class="card shadow">
             <div class="card-body">
+                <h3 class="card-header mb-3"><strong>Absen</strong></h3>
                     <form>
-                        <label class="mb-1" for="">Mata Kuliah</label>
+                        <div class="absen">
+                        <label class=" mb-1 " for=""><strong>Mata Kuliah</strong></label>
                         <select class="form-select mb-3" aria-label="Default select example">
                         <option selected>Pilih mata kuliah</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                        </select>       
-                        <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                            Alfa
+                        <?php foreach ($matkul as $id): ?>
+                        <option value="<?= $id['id_matkul'] ?>"><?= $id[
+    'nama_matkul'
+] ?></option> 
+                        <?php endforeach; ?>      
+                        </select>
+                        <label class="" for=""><strong>Keterangan Mahasiswa</strong></label>
+                        <br>
+                        <label class="radio-inline">
+                        <input type="radio" name="optradio" checked>Sakit 
                         </label>
-                        </div>
-                        <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                        <label class="form-check-label" for="flexRadioDefault2">
-                            Sakit
+                        <label class="radio-inline">
+                        <input type="radio" name="optradio">Alfa
                         </label>
-                        </div>
-                        <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                        <label class="form-check-label" for="flexRadioDefault2">
-                            Hadir
+                        <label class="radio-inline">
+                        <input type="radio" name="optradio">Izin
                         </label>
-                        </div>
+                        <br>
+                        <hr class="a">
+                    </form>         
                         <div class="col-md-6">
-                            <button type="submit" class="btn btn-primary mt-5">Simpan</button>
+                            <button type="submit" class="btn btn-primary mt-3">Simpan</button>
+                        </div>
                         </div>
                     </div>
-                </form>
+                        </form>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h3 class="card-header"><strong>History Absen</strong></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

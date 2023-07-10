@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Controllers;
+
 use App\Models\fileModel;
 use App\Models\matkulModel;
 use App\Models\praktikumModel;
@@ -10,14 +11,22 @@ class Prak extends BaseController
     protected $matkul;
     protected $file;
     protected $praktikumModel;
+    protected $helpers = ['form'];
+
+    public function __construct()
+    {
+        $this->matkul = new matkulModel();
+        $this->file = new fileModel();
+    }
 
     public function dash()
     {
-        return view('web/Home');
+        return view('web/dash');
     }
     public function absen()
     {
-        return view('web/absen');
+        $data['matkul'] = $this->matkul->getAllData();
+        return view('web/absen', $data);
     }
     public function matWeb()
     {
@@ -36,20 +45,20 @@ class Prak extends BaseController
         return view('web/tugas1');
     }
 
-    public function store()
+    public function upload()
     {
         $file = $this->request->getFile('file');
-        //Generate nama file yang unik
+
+        // $fileName = $file->getRandomName();
         $fileName = $file->getRandomName();
-        //Pindahkan file ke direktori penyimpanan
         $file->move(ROOTPATH . 'public/assets/file/', $fileName);
 
         $data = [
             'nama_matkul' => $this->request->getPost('nama_matkul'),
-            'file' => $this->request->getPost('nama_file'),
+            'file' => $fileName,
         ];
         $this->file->save($data);
         session()->setFlashdata('success', 'Data berhasil disimpan.');
-        return redirect()->to('/tugas1');
+        return redirect()->to('tugas1');
     }
 }
