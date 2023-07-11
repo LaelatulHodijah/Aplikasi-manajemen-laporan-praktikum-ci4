@@ -12,11 +12,16 @@
     <div class="card-body">
     <table class="table table-borderless">
        <thead>
-        <ul>
+       <div class="card mt-3 mb-3">
+            <div class="card-body">
+            <ul>
+            <p>Silahkan kumpulkan laporan sementara hasil progres pengerjaan praktikum sesuai BPP untuk dinilai sebagai penilaian aktivitas.</p>
         </ul>
-        <hr>
+            </div>
+        </div>
        </thead>
        <tbody>
+        <hr>
         <h3 class="buttonModal">Pengumpulan</h3>
         <br>
         <!-- Button trigger modal -->
@@ -35,11 +40,11 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Laporan Minggu 10</h1>
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Laporan Sementara Minggu 1</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-            <form action="upload2" method="POST" enctype="multipart/form-data">
+            <form action="upload" method="POST" enctype="multipart/form-data">
                     <div class="mb-3">
                         <label for="exampleInputJudul1" class="form-label">Judul</label>
                         <input type="text" name="nama_matkul" class="form-control" id="exampleInputJudul1" >
@@ -63,11 +68,11 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Laporan Praktikum</h1>
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Laporan praktikum sementara minggu 2</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form>
+            <form action="upload1" method="POST" enctype="multipart/form-data">
                     <div class="mb-3">
                         <label for="exampleInputJudul1" class="form-label">Judul</label>
                         <input type="Judul" class="form-control" id="exampleInputJudul1" >

@@ -37,7 +37,8 @@ $routes->get('profile', 'Prak::profile');
 $routes->get('matWeb', 'Prak::matWeb');
 $routes->get('matSql', 'Prak::matSql');
 $routes->get('tugas1', 'Prak::tugas1');
-$routes->get('upload', 'Prak::upload');
+$routes->post('upload1', 'Prak::upload1');
+$routes->post('upload2', 'Prak::upload2');
 
 /*
  * --------------------------------------------------------------------

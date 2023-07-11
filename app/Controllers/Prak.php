@@ -44,8 +44,20 @@ class Prak extends BaseController
     {
         return view('web/tugas1');
     }
+    public function tugas4()
+    {
+        return view('web/tugas4');
+    }
+    public function tugas5()
+    {
+        return view('web/tugas5');
+    }
+    public function tugas6()
+    {
+        return view('web/tugas6');
+    }
 
-    public function upload()
+    public function upload1()
     {
         $file = $this->request->getFile('file');
 
@@ -58,7 +70,21 @@ class Prak extends BaseController
             'file' => $fileName,
         ];
         $this->file->save($data);
-        session()->setFlashdata('success', 'Data berhasil disimpan.');
-        return redirect()->to('tugas1');
+        return redirect()->to('matSql');
+    }
+    public function upload2()
+    {
+        $file = $this->request->getFile('file');
+
+        // $fileName = $file->getRandomName();
+        $fileName = $file->getRandomName();
+        $file->move(ROOTPATH . 'public/assets/file/', $fileName);
+
+        $data = [
+            'nama_matkul' => $this->request->getPost('nama_matkul'),
+            'file' => $fileName,
+        ];
+        $this->file->save($data);
+        return redirect()->to('matWeb');
     }
 }

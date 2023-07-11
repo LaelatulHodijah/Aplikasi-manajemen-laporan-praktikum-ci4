@@ -14,9 +14,6 @@
         <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="absen">Absensi</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="profile">Profil</a>
-        </li>
         <li class="nav-item dropdown">
           <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 Mata Kuliah</a>
@@ -24,6 +21,9 @@ Mata Kuliah</a>
             <li><a class="dropdown-item" href="matWeb">Web Framework</a></li>
             <li><a class="dropdown-item" href="matSql">Pemrograman SQL</a></li>
           </ul>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="profile">Profil</a>
         </li>
         </ul>
         <form class="d-flex" role="search">
