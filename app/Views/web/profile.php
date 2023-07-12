@@ -72,7 +72,7 @@
                             </div>
                             <div class="edit-data">
                                 <hr>
-                                <a class="btn btn-primary" href="editProfile" role="button">Edit</a>
+                                <a class="btn btn-primary" href="editProfile" role="button">Edit </a>
                             </div>
                         </div>
                     </div>

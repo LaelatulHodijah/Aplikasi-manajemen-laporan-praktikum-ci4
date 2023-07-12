@@ -42,30 +42,11 @@
             <form action="upload2" method="POST" enctype="multipart/form-data">
                     <div class="mb-3">
                         <label for="exampleInputJudul1" class="form-label">Judul</label>
-                        <input type="text" name="nama_matkul" class="form-control <?= isset(
-                            $errors['nama_matkul']
-                        )
-                            ? 'is-invalid'
-                            : '' ?>"id="nama_matkul" >
-                            <?php if (isset($errors['nama_matkul'])): ?>
-                                <div class="invalid-feedback">
-                                    <?= $errors['nama_matkul'] ?>
-                                </div>
-                            <?php endif; ?>
+                        <input type="text" name="nama_matkul" class="form-control" id="nama_matkul" >
                         <div id="judullHelp" class="form-text">Masukan judul / nama file praktikum anda.</div>
                     </div>
                     <div class="input-group mb-3">
-                    <input placeholder="Pilih File" type="file" name="file" class="form-control <?= isset(
-                        $errors['file']
-                    )
-                        ? 'is-invalid'
-                        : '' ?>" id="file"> <?php if (
-    isset($errors['file'])
-): ?>
-                            <div class="invalid-feedback">
-                                <?= $errors['file'] ?>
-                            </div>
-                        <?php endif; ?>
+                    <input placeholder="Pilih File" type="file" name="file" class="form-control" id="file">
                     </div>
                     <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

@@ -67,34 +67,6 @@ class Prak extends BaseController
 
     public function upload1()
     {
-        // $validation = $this->validate([
-        //     'nama_matkul' => [
-        //         'rules' => 'required',
-        //         'errors' => [
-        //             'required' => 'Tidak boleh kosong',
-        //         ],
-        //     ],
-        //     'file' => [
-        //         'rules' =>
-        //             'uploaded[file]|mime_in[file,file/pdf,file/doc,file/docx]|max_size[file,5080]',
-        //         'errors' => [
-        //             'uploaded' => 'Kolom Cover harus berisi file',
-        //             'mime_in' =>
-        //                 'Tipe file pada Kolom Cover harus berupa PDF, DOC, atau DOCX',
-        //             'max_size' =>
-        //                 'Ukuran file pada Kolom Cover melebihi batas maksimum',
-        //         ],
-        //     ],
-        // ]);
-
-        // if (!$validation) {
-        //     $errors = \Config\Services::validation()->getErrors();
-
-        //     return redirect()
-        //         ->back()
-        //         ->withInput()
-        //         ->with('errors', $errors);
-        // }
         $file = $this->request->getFile('file');
 
         // $fileName = $file->getRandomName();
@@ -110,35 +82,6 @@ class Prak extends BaseController
     }
     public function upload2()
     {
-        // $validation = $this->validate([
-        //     'nama_matkul' => [
-        //         'rules' => 'required',
-        //         'errors' => [
-        //             'required' => 'Tidak boleh kosong',
-        //         ],
-        //     ],
-        //     'file' => [
-        //         'rules' =>
-        //             'uploaded[file]|mime_in[file,file/pdf,file/doc,file/docx]|max_size[file,5080]',
-        //         'errors' => [
-        //             'uploaded' => 'Kolom Cover harus berisi file',
-        //             'mime_in' =>
-        //                 'Tipe file pada Kolom Cover harus berupa PDF, DOC, atau DOCX',
-        //             'max_size' =>
-        //                 'Ukuran file pada Kolom Cover melebihi batas maksimum',
-        //         ],
-        //     ],
-        // ]);
-
-        // if (!$validation) {
-        //     $errors = \Config\Services::validation()->getErrors();
-
-        //     return redirect()
-        //         ->back()
-        //         ->withInput()
-        //         ->with('errors', $errors);
-        // }
-
         $file = $this->request->getFile('file');
 
         // $fileName = $file->getRandomName();
