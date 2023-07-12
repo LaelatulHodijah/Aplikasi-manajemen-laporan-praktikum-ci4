@@ -7,6 +7,7 @@
         <h1>PMI 1416 Pemrograman Web Framework Manajemen informatika KELAS 4A</h1>
         </div>
     </div>
+    <div class="p">
     <div class="row">
     <div class="card shadow">
     <div class="card-body">
@@ -70,6 +71,7 @@
         </tbody>
         <hr>
     </table>
+    </div>
   </div>
   </div>
     </div>
