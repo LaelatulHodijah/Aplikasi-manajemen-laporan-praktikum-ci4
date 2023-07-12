@@ -14,6 +14,10 @@ class fileModel extends Model
     {
         return $this->findAll();
     }
+    public function getFile()
+    {
+        return $this->getFile();
+    }
 }
 
 ?>

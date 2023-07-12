@@ -25,7 +25,7 @@
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
             Kumpul
             </button>
-            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#detailModal">
             Detail
             </button>
         </div>
@@ -59,7 +59,7 @@
         </div>
         <!-- end-->
         <!-- start-->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="detailModal" tabindex="-1" aria-labelledby="detailModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
             <div class="modal-header">
@@ -67,6 +67,11 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
+                <h1>Status</h1>
+                <div class="progress mb-3" style="height: 20px">
+                    <div class="progress-bar progress-bar-animated progress-bar-striped bg-success" role="progressbar" style="width: 100.2%" aria-valuenow="100.2" aria-valuemin="0" aria-valuemax="100">100%
+                    </div>
+                </div>
                 <form>
                     <div class="mb-3">
                         <label for="exampleInputJudul1" class="form-label">Judul</label>
@@ -74,7 +79,7 @@
                         <div id="judullHelp" class="form-text">Masukan judul / nama file praktikum anda.</div>
                     </div>
                     <div class="mb-3">
-                    <label for="formFile" class="form-label">Default file input example</label>
+                    <label for="formFile" class="form-label">Pilih File</label>
                     <input class="form-control" type="file" id="formFile">
                     </div>
                     <div class="modal-footer">
