@@ -33,7 +33,7 @@ Mata Kuliah</a>
         <ul class="dropdown-menu shadow bg-light">
           <li><a class="btn btn-light text-dark" href="<?= base_url(
               'login/logout'
-          ) ?>" role="button"> Logout </a></li>
+          ); ?>" role="button"> Logout </a></li>
         </ul>
         </div>
         </div>
