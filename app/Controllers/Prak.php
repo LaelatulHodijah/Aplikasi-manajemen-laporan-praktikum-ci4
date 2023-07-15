@@ -60,6 +60,10 @@ class Prak extends BaseController
     {
         return view('web/tugas6');
     }
+    public function dosen()
+    {
+        return view('web/dosen/dosen');
+    }
     public function editProfile()
     {
         return view('web/editProfile');
