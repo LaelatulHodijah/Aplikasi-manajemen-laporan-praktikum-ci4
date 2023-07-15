@@ -36,6 +36,10 @@ class Prak extends BaseController
     {
         return view('web/matSql');
     }
+    public function sqlDosen()
+    {
+        return view('web/dosen/sqlDosen');
+    }
     public function profile()
     {
         return view('web/profile');

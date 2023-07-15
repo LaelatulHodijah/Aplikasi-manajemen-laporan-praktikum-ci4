@@ -15,8 +15,8 @@
           <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 Mata Kuliah</a>
           <ul class="dropdown-menu ">
-            <li><a class="dropdown-item" href="matWeb">Web Framework</a></li>
-            <li><a class="dropdown-item" href="matSql">Pemrograman SQL</a></li>
+            <li><a class="dropdown-item" href="frameDosen">Web Framework</a></li>
+            <li><a class="dropdown-item" href="sqlDosen">Pemrograman SQL</a></li>
           </ul>
         </li>
         <li class="nav-item">
