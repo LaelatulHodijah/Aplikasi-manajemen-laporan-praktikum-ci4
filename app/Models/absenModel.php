@@ -13,7 +13,7 @@ class matkulModel extends Model
     public function getAllData()
     {
         return $this->findAll();
-    }
+    }
 }
 
 ?>

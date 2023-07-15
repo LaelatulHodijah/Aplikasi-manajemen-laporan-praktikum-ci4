@@ -12,11 +12,7 @@ class matkulModel extends Model
 
     public function getAllData()
     {
-        return $this->join(
-            'absen',
-            'matkul.keterangan_mhs = absen.id_matkul'
-        )->findAll();
-
+        return $this->findAll();
     }
 }
 

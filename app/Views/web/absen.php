@@ -24,10 +24,10 @@
                         <label class="" for=""><strong>Keterangan Mahasiswa</strong></label>
                         <br>
                         <label class="radio-inline">
-                        <input type="radio" name="hadir" checked>Hadir 
+                        <input type="radio" name="hadir" >Hadir 
                         </label>
                         <label class="radio-inline">
-                        <input type="radio" name="sakit" checked>Sakit 
+                        <input type="radio" name="sakit">Sakit 
                         </label>
                         <label class="radio-inline">
                         <input type="radio" name="alfa">Alfa
@@ -36,7 +36,6 @@
                         <input type="radio" name="izin">Izin
                         </label>
                         <br>
-                        <hr class="a">
                     </form>         
                         <div class="col-md-6">
                             <button type="submit" class="btn btn-primary mt-3">Simpan</button>
