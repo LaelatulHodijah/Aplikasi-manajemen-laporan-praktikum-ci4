@@ -24,13 +24,16 @@
                         <label class="" for=""><strong>Keterangan Mahasiswa</strong></label>
                         <br>
                         <label class="radio-inline">
-                        <input type="radio" name="optradio" checked>Sakit 
+                        <input type="radio" name="hadir" checked>Hadir 
                         </label>
                         <label class="radio-inline">
-                        <input type="radio" name="optradio">Alfa
+                        <input type="radio" name="sakit" checked>Sakit 
                         </label>
                         <label class="radio-inline">
-                        <input type="radio" name="optradio">Izin
+                        <input type="radio" name="alfa">Alfa
+                        </label>
+                        <label class="radio-inline">
+                        <input type="radio" name="izin">Izin
                         </label>
                         <br>
                         <hr class="a">
