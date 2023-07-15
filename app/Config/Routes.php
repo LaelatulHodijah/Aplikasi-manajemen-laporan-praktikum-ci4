@@ -42,6 +42,7 @@ $routes->get('matWeb', 'Prak::matWeb');
 $routes->get('matSql', 'Prak::matSql');
 $routes->get('dosen', 'Prak::dosen');
 $routes->get('sqlDosen', 'Prak::sqlDosen');
+$routes->get('frameDosen', 'Prak::frameDosen');
 $routes->get('tugas2', 'Prak::tugas2');
 $routes->post('upload1', 'Prak::upload1');
 $routes->post('upload2', 'Prak::upload2');
