@@ -6,7 +6,7 @@
         <div class="col">
             <div class="card shadow">
                 <div class="card-body shadow">
-                    <h5 class="card-title">profile Mahasisea</h5>
+                    <h5 class="card-title">Profile Mahasiswa</h5>
                     <hr>
                     <form action="" method="post">
                     <div class="pl-lg-4">
